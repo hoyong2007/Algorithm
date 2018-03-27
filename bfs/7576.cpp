@@ -7,7 +7,7 @@
 
 using namespace std;
 
-queue<pair<pair<int, int>, int>> Queue;	// <<x,y>,day>
+queue<pair<pair<int, int>, int> > Queue;	// <<x,y>,day>
 int Field[1500][1500] = { 0 };
 int X, Y, DAY;
 
@@ -68,7 +68,7 @@ int main()
 		DAY = -1;
 
 	for (i = 0; i < Y; i++)
-		for (j = 0; j < Y; j++)
+		for (j = 0; j < X; j++)
 			if (Field[i][j] == 0)
 				DAY = -1;
 
